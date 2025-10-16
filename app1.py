@@ -9,6 +9,11 @@ import streamlit.components.v1 as components
 import plotly.express as px
 import plotly.graph_objects as go
 
+# 👇 Añade estas tres líneas
+from pathlib import Path
+import sys
+sys.path.append(str(Path(__file__).parent / "app"))
+
 # -------------------------------
 # Configuración general de la página
 # -------------------------------
